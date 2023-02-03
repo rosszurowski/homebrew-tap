@@ -5,21 +5,21 @@
 class Tandem < Formula
   desc "tandem runs commands in parallel, treating them as a group."
   homepage "https://github.com/rosszurowski/tandem"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rosszurowski/tandem/releases/download/0.0.2/tandem_0.0.2_darwin_amd64.tar.gz"
-      sha256 "c9a7a4f3d39cde98790313c9c46d6e1841065c7552d4908edcb88663366df296"
+      url "https://github.com/rosszurowski/tandem/releases/download/0.0.3/tandem_0.0.3_darwin_amd64.tar.gz"
+      sha256 "62f88b82bf6a529da7e352c2b887913bd87dea1240b3e9fa177729bf3dd5ba77"
 
       def install
         bin.install "tandem"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rosszurowski/tandem/releases/download/0.0.2/tandem_0.0.2_darwin_arm64.tar.gz"
-      sha256 "79672a7577a1bba2abd4535fc3afd208953b98809cfd858e55d0bd070cab1b9b"
+      url "https://github.com/rosszurowski/tandem/releases/download/0.0.3/tandem_0.0.3_darwin_arm64.tar.gz"
+      sha256 "8c4a230100292f2b9e4bb77915b1dc604e786499757526904189fb14253ec097"
 
       def install
         bin.install "tandem"
@@ -29,16 +29,16 @@ class Tandem < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rosszurowski/tandem/releases/download/0.0.2/tandem_0.0.2_linux_arm64.tar.gz"
-      sha256 "062901ce9565bdd626071a4dd974238133d0ff75763bd79a79c676d0b2ec5eb4"
+      url "https://github.com/rosszurowski/tandem/releases/download/0.0.3/tandem_0.0.3_linux_arm64.tar.gz"
+      sha256 "dab2cc66aaf7af8c483d65801ed3a0627eb1da493738c6fb132d62b6a352c58c"
 
       def install
         bin.install "tandem"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rosszurowski/tandem/releases/download/0.0.2/tandem_0.0.2_linux_amd64.tar.gz"
-      sha256 "f1712f607c9eeacbf55827acd4202da698b6120af0577b47bb7d6d0f25122f29"
+      url "https://github.com/rosszurowski/tandem/releases/download/0.0.3/tandem_0.0.3_linux_amd64.tar.gz"
+      sha256 "bda5347e5388ad8215d10b7abe0394fa9c4214080c10631c88bab05ec0f98689"
 
       def install
         bin.install "tandem"
